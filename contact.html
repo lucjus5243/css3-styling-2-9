@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    Project 4.8 Responsive Design
+    Author: Lucas Justiniano
+    Date: 1/12/2026
+    Filename: contact.html
+  -->
+  <meta charset="UTF-8">
+  <meta name="description" content="A second HTML page called from index.html that accepts contact information.">
+  <meta name="keywords" content="HTML, contacts page">
+  <meta name="author" content="Lucas Justiniano">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Index HTML Page ver.2 Project 4.8</title>
+
+  <!-- REQUIRED: second stylesheet -->
+  <link rel="stylesheet" href="styles-contact.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>Contact</h1>
+  </header>
+
+  <!-- Flexbox container for main content -->
+  <main class="page-wrap">
+
+    <!-- Flexbox nav -->
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <!-- Flexbox form card -->
+    <section class="form-card">
+      <h2>Send a Message</h2>
+
+      <!-- Replace with YOUR email -->
+      <form id="myForm" action="mailto:lucjus5243@students.ecpi.edu" method="POST" enctype="text/plain">
+
+        <div class="form-row">
+          <label for="senderName">Name (required)</label>
+          <input type="text" id="senderName" name="senderName" required>
+        </div>
+
+        <div class="form-row">
+          <label for="senderEmail">Email (required)</label>
+          <input type="email" id="senderEmail" name="senderEmail" required>
+        </div>
+
+        <div class="form-row">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject">
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <input type="submit" value="Submit">
+          <button type="button" onclick="history.back()">Back</button>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- REQUIRED: submit action script -->
+  <script src="script.js"></script>
+</body>
+</html>
