@@ -5,77 +5,91 @@
     <title>CSS3 Styling Project</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<header>
-    <h1>My Website Header</h1>
-</header>
+    <!-- SIMPLE HEADER (from the first picture) -->
+    <header class="simple-header">
+        <h1>Welcome</h1>
+        <nav class="simple-nav">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-<nav>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
+    <!-- MAIN HEADER (your styled site header) -->
+    <header class="main-header">
+        <h1>My Website Header</h1>
 
-<main>
-    <section>
-        <h2>Section One</h2>
-        <p>This is the first content section. It has padding, margins, and a background color.</p>
-    </section>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section>
-        <h2>Section Two</h2>
-        <p>This second section demonstrates spacing, borders, and readability improvements.</p>
+    <main>
+
+        <section>
+            <h2>Section One</h2>
+            <p>This is the first content section. It has padding, margins, and a background color.</p>
         </section>
+
+        <section>
+            <h2>Section Two</h2>
+            <p>This second section demonstrates spacing, borders, and readability improvements.</p>
+        </section>
+
         <section id="projects">
-  <h2>Projects</h2>
+            <h2>Projects</h2>
 
-  <!-- Projects Table -->
-  <table class="projects-table">
-    <caption>Sample Projects</caption>
+            <!-- Projects Table -->
+            <table class="projects-table">
+                <caption>Sample Projects</caption>
 
-    <colgroup>
-      <col class="col-1">
-      <col class="col-2">
-      <col class="col-3">
-    </colgroup>
+                <colgroup>
+                    <col class="col-1">
+                    <col class="col-2">
+                    <col class="col-3">
+                </colgroup>
 
-    <thead>
-      <tr>
-        <th>Project Name</th>
-        <th>Description</th>
-        <th>Image</th>
-      </tr>
-    </thead>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
 
-    <tbody>
-      <tr>
-        <td>CSS Layout Project</td>
-        <td>Demonstrates spacing, layout, and hover effects using CSS.</td>
-        <td>Image Placeholder</td>
-      </tr>
-      <tr>
-        <td>HTML Structure Project</td>
-        <td>Uses semantic HTML elements to organize page content.</td>
-        <td>Image Placeholder</td>
-      </tr>
-    </tbody>
+                <tbody>
+                    <tr>
+                        <td>CSS Layout Project</td>
+                        <td>Demonstrates spacing, layout, and hover effects using CSS.</td>
+                        <td>Image Placeholder</td>
+                    </tr>
+                    <tr>
+                        <td>HTML Structure Project</td>
+                        <td>Uses semantic HTML elements to organize page content.</td>
+                        <td>Image Placeholder</td>
+                    </tr>
+                </tbody>
 
-    <tfoot>
-      <tr>
-        <td colspan="3">More projects coming soon.</td>
-      </tr>
-    </tfoot>
-  </table>
-</section>
-</main>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">More projects coming soon.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
 
-<footer>
-    <p>© 2026 Lucas Justiniano | CSS3 Styling Project</p>
-</footer>
+    </main>
+
+    <footer>
+        <p>© 2026 Lucas Justiniano | CSS3 Styling Project</p>
+    </footer>
 
 </body>
 </html>
