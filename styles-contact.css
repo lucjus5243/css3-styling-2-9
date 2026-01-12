@@ -1,0 +1,158 @@
+/*
+  Project 4.8 – Responsive Design
+  Author: Lucas Justiniano
+  Filename: styles-contact.css
+*/
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base layout */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 16px;
+  line-height: 1.5;
+}
+
+/* MAIN FLEXBOX */
+.page-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* NAV FLEXBOX */
+.site-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 150px;
+}
+
+.site-nav a {
+  text-decoration: none;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.site-nav a.active {
+  font-weight: bold;
+}
+
+/* FORM CARD */
+.form-card {
+  flex: 1;
+  max-width: 700px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+/* FORM FLEXBOX */
+#myForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border: 2px solid #cfcfcf;
+  border-radius: 10px;
+
+  /* REQUIRED TRANSITION */
+  transition: border-color 0.3s ease;
+}
+
+/* Hover + Focus */
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+  border-color: #888;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #333;
+}
+
+/* Buttons */
+.form-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+input[type="submit"],
+button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #999;
+  cursor: pointer;
+}
+
+/* REQUIRED SUBMIT TRANSITION */
+input[type="submit"] {
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #e6e6e6;
+}
+
+button:hover {
+  background-color: #f2f2f2;
+}
+
+/* -------------------------
+   RESPONSIVE DESIGN
+-------------------------- */
+
+/* Phone */
+@media (max-width: 600px) {
+  .page-wrap {
+    flex-direction: column;
+  }
+
+  .site-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 992px) {
+  .page-wrap {
+    flex-direction: column;
+  }
+
+  .site-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* Desktop */
+@media (min-width: 993px) {
+  .page-wrap {
+    flex-direction: row;
+  }
+}
