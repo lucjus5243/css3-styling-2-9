@@ -12,7 +12,7 @@ This project is a responsive website created using HTML5, CSS3, and JavaScript. 
 
 ## GitHub Pages Live Site
 **Live Website URL:**  
-(To be added after GitHub Pages is enabled)
+https://lucjus5243.github.io/css3-styling-2-9/
 
 ## Repository Files
 - `index.html` – Main homepage
